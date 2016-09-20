@@ -1,0 +1,37 @@
+# Site settings
+name: 我的 个人博客
+email: dreamerzhx@163.com
+author: hiXing
+url: https://hixing.github.io/
+resume_site: https://hixing.github.io/
+github: https://github.com/hiXing/
+baseurl: "/LessOrMore"
+description: Actually, less is more!
+meta_description: 嗨_星;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休
+motto: It's our wits that make us men.
+banner: 学而不思则罔，思而不学则殆。
+
+#permalink: /:categories/:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
+paginate: 10
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+
+github_username: hiXing
+highlighter: rouge
+
+# Build settings
+markdown: kramdown
+
+FB:
+  comments :
+    provider : duoshuo
+    duoshuo:
+        short_name : hiXing
+    disqus :
+        short_name : hiXing
+    # facebook :
+    #   appid : 123
+    #   num_posts: 5
+    #   width: 580
+    #   colorscheme: light
