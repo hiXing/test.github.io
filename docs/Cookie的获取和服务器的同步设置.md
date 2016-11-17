@@ -1,14 +1,14 @@
-					CookieµÄ»ñÈ¡ºÍ·şÎñÆ÷µÄÍ¬²½ÉèÖÃ
-Ò»¡¢http¶ÔCookieµÄ¶ÁÈ¡ºÍ·şÎñÆ÷Í¬²½
-1¡¢·şÎñÆ÷Ìá½»sessionIdºÍ·şÎñÆ÷×´Ì¬±£³ÖÒ»ÖÂ
-	µ±AndroidÓ¦ÓÃ³ÌĞò·ÃÎÊWEB·şÎñÆ÷µÄÊ±ºò£¬ÎÒÃÇÎªÁËÓë·şÎñÆ÷±£³ÖÍ¬Ò»»á»°£¬Ò²¾ÍÊÇËµµ±Ç°µÇÂ¼ÓÃ»§Óë·şÎñÆ÷µÄ½»»¥ÊÇÔÚÍ¬SessionIdÏÂ¡£µ±ÎÒÃÇµÇÂ¼³É¹¦µÄÊ±ºò£¬¿ÉÒÔÍ¨¹ıHTTPÇëÇó»ñÈ¡µ½CookieĞÅÏ¢£¬ÆäÖĞ°üÀ¨»á»°µÄSessionId£¬Í¬Ê±Ò²¿ÉÒÔ×Ô¼º½«SessionId·ÅÈëJsonÖĞ·µ»Ø¡£SessionÎÒÃÇ¿ÉÒÔÓÃÒ»¸ö¾²Ì¬±äÁ¿À´´æ·Å£¬Ã¿´ÎÏò·şÎñÆ÷·¢ËÍÇëÇóµÄÊ±ºò½«SessionId´ø¹ıÈ¥£¬·şÎñÆ÷»á×Ô¶¯¼ìÑéÕâ¸öSessionIdÓĞÃ»ÓĞÊ§Ğ§¡£
+					Cookieçš„è·å–å’ŒæœåŠ¡å™¨çš„åŒæ­¥è®¾ç½®
+ä¸€ã€httpå¯¹Cookieçš„è¯»å–å’ŒæœåŠ¡å™¨åŒæ­¥
+1ã€æœåŠ¡å™¨æäº¤sessionIdå’ŒæœåŠ¡å™¨çŠ¶æ€ä¿æŒä¸€è‡´
+	å½“Androidåº”ç”¨ç¨‹åºè®¿é—®WEBæœåŠ¡å™¨çš„æ—¶å€™ï¼Œæˆ‘ä»¬ä¸ºäº†ä¸æœåŠ¡å™¨ä¿æŒåŒä¸€ä¼šè¯ï¼Œä¹Ÿå°±æ˜¯è¯´å½“å‰ç™»å½•ç”¨æˆ·ä¸æœåŠ¡å™¨çš„äº¤äº’æ˜¯åœ¨åŒSessionIdä¸‹ã€‚å½“æˆ‘ä»¬ç™»å½•æˆåŠŸçš„æ—¶å€™ï¼Œå¯ä»¥é€šè¿‡HTTPè¯·æ±‚è·å–åˆ°Cookieä¿¡æ¯ï¼Œå…¶ä¸­åŒ…æ‹¬ä¼šè¯çš„SessionIdï¼ŒåŒæ—¶ä¹Ÿå¯ä»¥è‡ªå·±å°†SessionIdæ”¾å…¥Jsonä¸­è¿”å›ã€‚Sessionæˆ‘ä»¬å¯ä»¥ç”¨ä¸€ä¸ªé™æ€å˜é‡æ¥å­˜æ”¾ï¼Œæ¯æ¬¡å‘æœåŠ¡å™¨å‘é€è¯·æ±‚çš„æ—¶å€™å°†SessionIdå¸¦è¿‡å»ï¼ŒæœåŠ¡å™¨ä¼šè‡ªåŠ¨æ£€éªŒè¿™ä¸ªSessionIdæœ‰æ²¡æœ‰å¤±æ•ˆã€‚
 	DefaultHttpClient httpclient = new DefaultHttpClient();
-	HttpPost httpPost = new HttpPost(·ÃÎÊµØÖ·);
-	httpPost.setHeader("Cookie", "JSESSIONID=" + valueÎÒÃÇÔÚ¾²Ì¬±äÁ¿Àï´æ·ÅµÄSessionId);
+	HttpPost httpPost = new HttpPost(è®¿é—®åœ°å€);
+	httpPost.setHeader("Cookie", "JSESSIONID=" + valueæˆ‘ä»¬åœ¨é™æ€å˜é‡é‡Œå­˜æ”¾çš„SessionId);
 	HttpResponse httpResponse = httpclient.execute(httpPost);
-	ÕâÑù¾Í¿ÉÒÔ½«SessionId´ø¹ıÈ¥ÁË¡£
-±¸×¢£ºÆäÖĞhttpPost.setHeader("Cookie", "JSESSIONID=" + ÎÒÃÇÔÚ¾²Ì¬±äÁ¿Àï´æ·ÅµÄSessionId);ÆäÖĞµÄJSESSIONIDÊÇÏÂÃæ»ñÈ¡µÄ	      cookieNameÒ²¾ÍÊÇÄãÒª²Ù×÷µÄcookieÃû³Æ£¬value¼´ÊÇ¶ÔÓ¦µÄcookieÖµ
-2¡¢»ñÈ¡cookieĞÅÏ¢
+	è¿™æ ·å°±å¯ä»¥å°†SessionIdå¸¦è¿‡å»äº†ã€‚
+å¤‡æ³¨ï¼šå…¶ä¸­httpPost.setHeader("Cookie", "JSESSIONID=" + æˆ‘ä»¬åœ¨é™æ€å˜é‡é‡Œå­˜æ”¾çš„SessionId);å…¶ä¸­çš„JSESSIONIDæ˜¯ä¸‹é¢è·å–çš„	      cookieNameä¹Ÿå°±æ˜¯ä½ è¦æ“ä½œçš„cookieåç§°ï¼Œvalueå³æ˜¯å¯¹åº”çš„cookieå€¼
+2ã€è·å–cookieä¿¡æ¯
 	DefaultHttpClient httpClient = new DefaultHttpClient();
         HttpPost httpPost = new HttpPost("");
         List<Cookie> alCookies = httpClient.getCookieStore().getCookies();
@@ -31,11 +31,11 @@
 	} catch (IOException e) {
 		e.printStackTrace();
 	}
-¶ş¡¢WebView¶ÔcookieµÄÍ¬²½²Ù×÷
-	1¡¢´´½¨cookie¶ÔÏó£¨Ò»°ãÔÚ£ºonCreate()µ÷ÓÃ£©
-		CookieSyncManager cookieManager = CookieSyncManager.createInstance(this); //cookie¹ÜÀí
-		//¿ªÊ¼ºÍwebViewÍ¬²½
+äºŒã€WebViewå¯¹cookieçš„åŒæ­¥æ“ä½œ
+	1ã€åˆ›å»ºcookieå¯¹è±¡ï¼ˆä¸€èˆ¬åœ¨ï¼šonCreate()è°ƒç”¨ï¼‰
+		CookieSyncManager cookieManager = CookieSyncManager.createInstance(this); //cookieç®¡ç†
+		//å¼€å§‹å’ŒwebViewåŒæ­¥
 		cookieManager.startSync();
-	2.½øĞĞÍ¬²½²Ù×÷£¨Ò»°ãÔÚ£ºonResume()ºÍonPause()£©
+	2.è¿›è¡ŒåŒæ­¥æ“ä½œï¼ˆä¸€èˆ¬åœ¨ï¼šonResume()å’ŒonPause()ï¼‰
 		cookieManager.sync();
 		cookieManager.stopSync();
